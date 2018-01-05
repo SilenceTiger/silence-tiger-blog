@@ -29,6 +29,10 @@
 </template>
 
 <script>
+import * as d3 from "d3"
+import * as three from "three"
+console.log(d3);
+console.log(three)
 export default {
   name: "app"
 };
