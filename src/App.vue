@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <h1>hello world</h1>
     <p v-highlight>
       <pre>
         <code class="javascript">
