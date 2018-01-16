@@ -1,10 +1,6 @@
 <template>
     <div id="blog-header">
-        <div class="blog-header-container">
-          <img src="../lib/img/silence.jpg"/>
-          <div class="blog-header-text"><span>沉默の老虎</span></div>
-          <img src="../lib/img/tiger.jpg"/>
-        </div>
+      <img src="../lib/img/tiger.png" class="blog-tiger-icon"/>
     </div>
 </template>
 
@@ -63,20 +59,15 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 #blog-header {
-  height: 120px;
+  height: 80px;
   width: 100%;
   background: #222;
+  position: relative;
 }
-.blog-header-container{
+.blog-tiger-icon{
   position: absolute;
-  height:120px;
-}
-.blog-header-container img{
-  height:100px
-}
-.blog-header-text{
-  font-size:32px;
-  margin-bottom:20px;
-  display:inline-block
+  bottom:15px;
+  left:5px;
+  height: 50px;
 }
 </style>

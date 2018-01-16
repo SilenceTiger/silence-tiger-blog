@@ -7,6 +7,9 @@
         <code class="javascript" v-html="html"></code>
       </pre>
     </p> -->
+    <div class="view-container">
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 
@@ -47,6 +50,17 @@ export default {
 
 <style>
   body{
-    background-color: rgb(245,245,245)
+    width:100%;
+    height:100%;
+    background-color:#f0f0f0;
+    overflow: hidden;
+  }
+  .view-container{
+    overflow-y: auto;
+    position: absolute;
+    top:130px;
+    bottom:0;
+    width:100%;
+    padding-bottom: 30px;
   }
 </style>
