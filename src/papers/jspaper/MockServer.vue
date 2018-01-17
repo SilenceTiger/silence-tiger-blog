@@ -125,6 +125,9 @@ export default {
   margin-top: 10px;
   margin-bottom:10px
 }
+.paper-content p{
+  font-size:16px
+}
 .paper-content .normal{
   font-size: 16px;
   text-align: justify;

@@ -3,17 +3,8 @@
     <div class="paper-modal">
       <img src="../lib/img/mock.png" class="paper-img-modal" />
       <div class="paper-title-modal">
-        使用express搭建简易的mock Server
+        等待填充
       </div>
-    </div>
-    <div class="paper-modal">
-      
-    </div>
-    <div class="paper-modal">
-      
-    </div>
-    <div class="paper-modal">
-      
     </div>
   </div>
 </template>
@@ -64,7 +55,7 @@ export default {
     margin-left:15px;
     margin-right:15px;
     margin-top:3px;
-    line-height: 28px;
+    line-height: 33px;
     word-break: break-all;
     white-space: nowrap;
     overflow:hidden;

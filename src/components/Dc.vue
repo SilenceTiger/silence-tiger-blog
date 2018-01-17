@@ -1,32 +1,69 @@
 <template>
   <div class="home">
-    <div class="paper-modal">
-      <img src="../lib/img/mock.png" class="paper-img-modal" />
+    <div class="paper-modal" v-for="item in jsList" :key="item.id" @click="zoomify($event)">
+      <img :src="item.imgSrc" class="paper-img-modal" />
       <div class="paper-title-modal">
-        使用express搭建简易的mock Server
+        {{item.title}}
       </div>
     </div>
-    <div class="paper-modal">
-      
-    </div>
-    <div class="paper-modal">
-      
-    </div>
-    <div class="paper-modal">
-      
-    </div>
+
+    <big-img v-if="showImg" :imgSrc="imgSrc" v-on:clickit="closeImg"></big-img>
   </div>
 </template>
 
 <script>
+import DesignChart from '../papers/dcpaper/DesignChart'
 export default {
-  name: "Home",
+  name: "Js",
+  components:{
+    'big-img' : DesignChart
+  },
   data() {
-    return {}
+    return {
+      jsList:[{
+        id:1,
+        title:'大屏首页',
+        imgSrc:'/static/imgs/designChart/screen-home.png',
+      },{
+        id:2,
+        title:'运行状态可视化',
+        imgSrc:'/static/imgs/designChart/screen-running.png',
+      },{
+        id:3,
+        title:'专业部门统计可视化',
+        imgSrc:'/static/imgs/designChart/screen-dispose.png',
+      },{
+        id:4,
+        title:'受理部门统计可视化（1）',
+        imgSrc:'/static/imgs/designChart/screen-accept1.png',
+      },{
+        id:5,
+        title:'受理部门统计可视化（2）',
+        imgSrc:'/static/imgs/designChart/screen-accept2.png',
+      },{
+        id:6,
+        title:'部件管理专题（1）',
+        imgSrc:'/static/imgs/designChart/sjs1.png',
+      },{
+        id:7,
+        title:'部件管理专题（2）',
+        imgSrc:'/static/imgs/designChart/sjs2.png',
+      },{
+        id:8,
+        title:'部件管理专题（3）',
+        imgSrc:'/static/imgs/designChart/sjs3.png',
+      }],
+      showImg:false,
+      imgSrc:''
+    }
   },
   methods: {
-    route: function(key) {
-      console.log(key)
+    zoomify(e) {
+      this.showImg = true
+      this.imgSrc = e.target.currentSrc
+    },
+    closeImg(){
+      this.showImg = false
     }
   }
 };
@@ -49,6 +86,7 @@ export default {
     margin-top:20px;
     box-shadow: 5px 5px 5px;
     border-radius: 5px;
+    cursor: pointer;
   }
   .paper-img-modal{
     width:280px;
@@ -64,7 +102,7 @@ export default {
     margin-left:15px;
     margin-right:15px;
     margin-top:3px;
-    line-height: 28px;
+    line-height: 33px;
     word-break: break-all;
     white-space: nowrap;
     overflow:hidden;
@@ -73,4 +111,5 @@ export default {
     -webkit-text-overflow:ellipsis;
    -moz-text-overflow:ellipsis;
   }
+
 </style>

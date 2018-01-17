@@ -4,7 +4,7 @@ import Home from '@/components/Home'
 import Js from '@/components/Js'
 import Dc from '@/components/Dc'
 
-import ThreeBegin from '@/papers/jspaper/ThreeBegin'
+import ThreeBegin1 from '@/papers/jspaper/ThreeBegin1'
 import MockServer from '@/papers/jspaper/MockServer'
 
 Vue.use(Router)
@@ -28,7 +28,7 @@ export default new Router({
     },{
       path: '/js/1',
       name: 'ThreeBegin',
-      component: ThreeBegin,
+      component: ThreeBegin1,
     },{
       path: '/js/3',
       name: 'MockServer',

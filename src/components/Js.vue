@@ -16,7 +16,7 @@ export default {
     return {
       jsList:[{
         id:1,
-        title:'three.js入门',
+        title:'three.js初探（1）',
         imgSrc:'/static/imgs/tiger2.jpg',
         route:'/js/1'
       },{
@@ -73,7 +73,7 @@ export default {
     margin-left:15px;
     margin-right:15px;
     margin-top:3px;
-    line-height: 28px;
+    line-height: 33px;
     word-break: break-all;
     white-space: nowrap;
     overflow:hidden;
