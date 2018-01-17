@@ -6,6 +6,7 @@ import Dc from '@/components/Dc'
 
 import ThreeBegin1 from '@/papers/jspaper/ThreeBegin1'
 import MockServer from '@/papers/jspaper/MockServer'
+import YouDontKnowJs from '@/papers/jspaper/YouDontKnowJs'
 
 Vue.use(Router)
 
@@ -33,6 +34,10 @@ export default new Router({
       path: '/js/3',
       name: 'MockServer',
       component: MockServer,
+    },{
+      path: '/js/4',
+      name: 'YouDontKnowJs.',
+      component: YouDontKnowJs,
     }
   ]
 })

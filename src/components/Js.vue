@@ -29,6 +29,11 @@ export default {
         title:'使用express搭建简易的mock server',
         imgSrc:'/static/imgs/mock.png',
         route:'/js/3'
+      },{
+        id:4,
+        title:'你不知道的Js',
+        imgSrc:'/static/imgs/你不知道的JavaScript下.jpg',
+        route:'/js/4'
       }]
     }
   },
